@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_width = "match_parent"
+	android:layout_height = "wrap_content">
+
+	<android.support.v7.widget.CardView
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:layout_marginBottom = "@dimen/recycler_item_food_card_margin_top_bottom"
+		android:layout_marginEnd = "@dimen/recycler_item_food_card_margin_start_end"
+		android:layout_marginStart = "@dimen/recycler_item_food_card_margin_start_end"
+		android:layout_marginTop = "@dimen/recycler_item_food_card_margin_top_bottom"
+		app:cardCornerRadius = "@dimen/recycler_item_food_card_radius"
+		app:cardElevation = "@dimen/recycler_item_food_card_elevation"
+		app:cardUseCompatPadding = "true">
+
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:orientation = "vertical"
+			android:padding = "@dimen/recycler_item_food_linear_layout_padding">
+
+			<ImageView
+				android:id = "@+id/recycler_item_food_image"
+				android:layout_width = "match_parent"
+				android:layout_height = "@dimen/recycler_item_food_image_height"
+				android:contentDescription = "@string/image_description"
+				android:scaleType = "centerCrop"/>
+
+			<TextView
+				android:id = "@+id/recycler_item_food_name"
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "@dimen/recycler_item_food_name_margin_top"
+				android:ellipsize = "end"
+				android:fontFamily = "@font/font_arvo_regular"
+				android:maxLines = "1"
+				android:text = "@string/recycler_item_food_name_dummy"
+				android:textColor = "@color/colorText"
+				android:textSize = "@dimen/recycler_item_food_name_text_size"/>
+
+			<RelativeLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "@dimen/recycler_item_food_text_name_margin_top">
+
+				<TextView
+					android:id = "@+id/recycler_item_food_type"
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:layout_centerVertical = "true"
+					android:drawablePadding = "@dimen/recycler_item_food_text_type_drawable_margin"
+					android:fontFamily = "@font/font_lato_regular"
+					android:gravity = "center"
+					android:text = "@string/recycler_item_food_type_dummy"
+					android:textColor = "@color/colorText"
+					android:textSize = "@dimen/recycler_item_food_text_type_size"
+					android:textStyle = "italic"/>
+
+				<TextView
+					android:id = "@+id/recycler_item_food_spicy"
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:layout_centerVertical = "true"
+					android:layout_marginEnd = "@dimen/recycler_item_food_text_spicy_margin_start_end"
+					android:layout_marginStart = "@dimen/recycler_item_food_text_spicy_margin_start_end"
+					android:layout_toEndOf = "@id/recycler_item_food_type"
+					android:layout_toRightOf = "@+id/recycler_item_food_type"
+					android:drawableLeft = "@drawable/chilli"
+					android:drawablePadding = "@dimen/recycler_item_food_text_spicy_drawable_padding"
+					android:drawableStart = "@drawable/chilli"
+					android:fontFamily = "@font/font_lato_regular"
+					android:gravity = "center"
+					android:text = "@string/recycler_item_food_spicy_dummy"
+					android:textColor = "@color/colorText"
+					android:textSize = "@dimen/recycler_item_food_text_type_size"
+					android:textStyle = "italic"/>
+
+				<android.support.v7.widget.CardView
+					android:id = "@+id/recycler_item_food_view_details"
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:layout_alignParentEnd = "true"
+					android:layout_alignParentRight = "true"
+					app:cardBackgroundColor = "@color/colorButton"
+					app:cardCornerRadius = "3dp"
+					tools:ignore = "RelativeOverlap">
+
+					<TextView
+						android:layout_width = "wrap_content"
+						android:layout_height = "wrap_content"
+						android:fontFamily = "@font/font_lato_regular"
+						android:paddingBottom = "@dimen/recycler_item_food_view_details_padding_top_bottom"
+						android:paddingEnd = "@dimen/recycler_item_food_view_details_padding_start_end"
+						android:paddingStart = "@dimen/recycler_item_food_view_details_padding_start_end"
+						android:paddingTop = "@dimen/recycler_item_food_view_details_padding_top_bottom"
+						android:text = "@string/recycler_item_food_view_details"
+						android:textColor = "@color/colorWhite"/>
+
+				</android.support.v7.widget.CardView>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+	</android.support.v7.widget.CardView>
+
+</RelativeLayout>

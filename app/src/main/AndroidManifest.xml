@@ -4,6 +4,10 @@
 	xmlns:tools = "http://schemas.android.com/tools"
 	package = "ritwik.food.foods">
 
+	<!-- Internet Permission is required to fetch data from API. -->
+	<uses-permission android:name = "android.permission.INTERNET"/>
+	<uses-permission android:name = "android.permission.ACCESS_NETWORK_STATE"/>
+
 	<application
 		android:name = ".AppController"
 		android:allowBackup = "true"
@@ -15,12 +19,20 @@
 		android:theme = "@style/AppTheme"
 		tools:ignore = "AllowBackup,GoogleAppIndexingWarning">
 
-		<activity android:name = ".activities.ListOfFoodsActivity">
+		<!-- ACTIVITY : List of Foods -->
+		<activity
+			android:name = ".activities.ListOfFoodsActivity"
+			android:theme = "@style/AppTheme.NoActionBar">
 			<intent-filter>
 				<action android:name = "android.intent.action.MAIN"/>
 				<category android:name = "android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
+
+		<!-- ACTIVITY : Food Details -->
+		<activity
+			android:name = ".activities.FoodDetailsActivity"
+			android:theme = "@style/AppTheme.NoActionBar"/>
 
 	</application>
 

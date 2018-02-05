@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- ADAPTER ITEM : Food Item -->
+	<dimen name = "recycler_item_food_image_height">200dp</dimen>
+	<dimen name = "recycler_item_food_name_margin_top">5dp</dimen>
+	<dimen name = "recycler_item_food_name_text_size">20sp</dimen>
+	<dimen name = "recycler_item_food_view_details_padding_top_bottom">10dp</dimen>
+	<dimen name = "recycler_item_food_view_details_padding_start_end">10dp</dimen>
+	<dimen name = "recycler_item_food_card_margin_top_bottom">5dp</dimen>
+	<dimen name = "recycler_item_food_card_margin_start_end">15dp</dimen>
+	<dimen name = "recycler_item_food_card_radius">2dp</dimen>
+	<dimen name = "recycler_item_food_card_elevation">5dp</dimen>
+	<dimen name = "recycler_item_food_linear_layout_padding">10dp</dimen>
+	<dimen name = "recycler_item_food_text_name_margin_top">5dp</dimen>
+	<dimen name = "recycler_item_food_text_type_size">16sp</dimen>
+	<dimen name = "recycler_item_food_text_type_drawable_margin">10dp</dimen>
+	<dimen name = "recycler_item_food_text_spicy_margin_start_end">10dp</dimen>
+	<dimen name = "recycler_item_food_text_spicy_drawable_padding">10dp</dimen>
+
+	<!-- ACTIVITY : Food Details -->
+	<dimen name = "activity_food_details_linear_layout_margin_top_bottom">10dp</dimen>
+	<dimen name = "activity_food_details_linear_layout_margin_start_end">15dp</dimen>
+	<dimen name = "activity_food_details_card_view_margin_bottom">10dp</dimen>
+	<dimen name = "activity_food_details_card_view_corner_radius">2dp</dimen>
+	<dimen name = "activity_food_details_card_view_elevation">0dp</dimen>
+	<dimen name = "activity_food_details_image_view_food_height">300dp</dimen>
+	<dimen name = "activity_food_details_food_name_margin_bottom">5dp</dimen>
+	<dimen name = "activity_food_details_food_name_text_size">20sp</dimen>
+	<dimen name = "activity_food_details_food_type_size">16sp</dimen>
+	<dimen name = "activity_food_details_food_spicy_margin_start_left">10dp</dimen>
+	<dimen name = "activity_food_details_food_spicy_size">16sp</dimen>
+	<dimen name = "activity_food_details_linear_layout_margin_top">5dp</dimen>
+</resources>

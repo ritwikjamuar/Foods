@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	tools:context = "ritwik.food.foods.activities.FoodDetailsActivity">
+
+	<android.support.design.widget.AppBarLayout
+		android:id = "@+id/activity_food_details_app_bar_layout"
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content">
+
+		<android.support.v7.widget.Toolbar
+			android:id = "@+id/activity_food_details_toolbar"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			app:subtitleTextColor = "@color/colorWhite"
+			app:title = "Food Details"
+			app:titleTextColor = "@color/colorWhite"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<ScrollView
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:layout_below = "@+id/activity_food_details_app_bar_layout">
+
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:orientation = "vertical"
+			android:paddingBottom = "@dimen/activity_food_details_linear_layout_margin_top_bottom"
+			android:paddingEnd = "@dimen/activity_food_details_linear_layout_margin_start_end"
+			android:paddingStart = "@dimen/activity_food_details_linear_layout_margin_start_end"
+			android:paddingTop = "@dimen/activity_food_details_linear_layout_margin_top_bottom">
+
+			<android.support.v7.widget.CardView
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginBottom = "@dimen/activity_food_details_card_view_margin_bottom"
+				app:cardCornerRadius = "@dimen/activity_food_details_card_view_corner_radius"
+				app:cardElevation = "@dimen/activity_food_details_card_view_elevation">
+
+				<ImageView
+					android:id = "@+id/activity_food_details_image"
+					android:layout_width = "match_parent"
+					android:layout_height = "@dimen/activity_food_details_image_view_food_height"
+					android:contentDescription = "@string/image_description"
+					android:scaleType = "centerCrop"/>
+
+			</android.support.v7.widget.CardView>
+
+			<TextView
+				android:id = "@+id/activity_food_details_name"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginBottom = "@dimen/activity_food_details_food_name_margin_bottom"
+				android:fontFamily = "@font/font_arvo_regular"
+				android:text = "@string/activity_food_details_name_dummy"
+				android:textSize = "@dimen/activity_food_details_food_name_text_size"/>
+
+			<TextView
+				android:id = "@+id/activity_food_details_description"
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:fontFamily = "@font/lato_regular"/>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "0.1sp"
+				android:background = "@color/colorBlack"/>
+
+			<LinearLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "@dimen/activity_food_details_linear_layout_margin_top"
+				android:orientation = "horizontal">
+
+				<TextView
+					android:id = "@+id/activity_food_details_type"
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:fontFamily = "@font/lato_regular"
+					android:text = "@string/activity_food_details_type_dummy_text"
+					android:textSize = "@dimen/activity_food_details_food_type_size"
+					android:textStyle = "italic"/>
+
+				<TextView
+					android:id = "@+id/activity_food_details_spicy"
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:layout_marginLeft = "@dimen/activity_food_details_food_spicy_margin_start_left"
+					android:layout_marginStart = "@dimen/activity_food_details_food_spicy_margin_start_left"
+					android:drawableLeft = "@drawable/chilli"
+					android:drawableStart = "@drawable/chilli"
+					android:fontFamily = "@font/lato_regular"
+					android:text = "@string/activity_food_details_spicy"
+					android:textSize = "@dimen/activity_food_details_food_spicy_size"
+					android:textStyle = "italic"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</RelativeLayout>

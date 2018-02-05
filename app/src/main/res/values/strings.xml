@@ -1,3 +1,18 @@
 <resources>
 	<string name = "app_name">Foods</string>
+	<string name = "image_description">Image</string>
+	<string name = "check_internet_connection">Please Check Your Internet Connection</string>
+	<string name = "food_type_veg">Veg</string>
+	<string name = "food_type_non_veg">Non-Veg</string>
+
+	<string name = "api_list_of_food">List of Foods is corrupted</string>
+
+	<!-- ADAPTER : ListOfFoodsRecycler -->
+	<string name = "recycler_item_food_name_dummy">Food</string>
+	<string name = "recycler_item_food_type_dummy">Non Veg</string>
+	<string name = "recycler_item_food_spicy_dummy">Spicy</string>
+	<string name = "recycler_item_food_view_details">View Details</string>
+	<string name = "activity_food_details_type_dummy_text">Veg</string>
+	<string name = "activity_food_details_spicy">Spicy</string>
+	<string name = "activity_food_details_name_dummy">Food</string>
 </resources>
